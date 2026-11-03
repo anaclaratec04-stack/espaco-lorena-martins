@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Espaço Lorena Martins | Alongamento em gel, manicure, pedicure, cílios e sobrancelhas</title>
+<meta name="description" content="Alongamento em gel, manicure, pedicure, cílios e sobrancelhas em Montes Claros. Veja os valores e agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf5ee; --ink:#3b2b2c; --muted:#7a6666; --berry:#a85b68; --berry-ink:#fff;
+  --orchid:#f2e0db; --line:#e7d8c4; --gold:#8f6a2c; --gold-line:#c9a46a;
+  --serif:"Bodoni Moda",Georgia,serif; --sans:"Figtree",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--berry);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+header{display:flex;justify-content:space-between;align-items:center;gap:1.2rem;padding:1.25rem 0;position:relative}
+.main-nav{display:flex;align-items:center;justify-content:center;gap:1.25rem}
+.main-nav a{font-size:.9rem;text-decoration:none;color:var(--muted);transition:color .2s}
+.main-nav a:hover{color:var(--berry)}
+.header-cta{flex-shrink:0}
+.eyebrow{color:var(--gold);font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1rem}
+.hero{min-height:28rem}
+.hero-copy{max-width:38rem}
+.hero h1 em{font-weight:500;color:var(--berry)}
+section{scroll-margin-top:1.5rem}
+.floating-whatsapp{position:fixed;right:1.25rem;bottom:1.25rem;z-index:10;background:#287c55;color:white;text-decoration:none;border-radius:999px;padding:.85rem 1.2rem;font-size:.9rem;font-weight:600;box-shadow:0 8px 25px rgba(40,124,85,.25)}
+.floating-whatsapp:hover{transform:translateY(-2px)}
+@media (max-width:900px){.main-nav{gap:.7rem}.main-nav a{font-size:.82rem}}
+
+.logo{font:italic 500 1.4rem var(--serif);text-decoration:none}
+.btn{display:inline-block;background:var(--berry);color:var(--berry-ink);padding:.8rem 1.5rem;border-radius:999px;font-weight:600;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center;padding:3rem 0 4rem}
+h1{font:700 clamp(2.6rem,6.5vw,5rem)/1.05 var(--serif);letter-spacing:-.01em;margin-bottom:1.25rem}
+.hero p{max-width:30rem;color:var(--muted);margin-bottom:2rem;font-size:1.15rem}
+.hand{display:flex;gap:.7rem;align-items:flex-end;justify-content:center;height:20rem}
+.nail{width:3.6rem;border-radius:1.8rem 1.8rem .9rem .9rem;position:relative;box-shadow:inset -6px -8px 14px rgba(0,0,0,.12)}
+.nail::after{content:"";position:absolute;top:10%;left:18%;width:22%;height:45%;border-radius:999px;background:rgba(255,255,255,.55)}
+.nail:nth-child(1){height:10rem;background:#ecc3c0}
+.nail:nth-child(2){height:14rem;background:#b76e79}
+.nail:nth-child(3){height:16.5rem;background:#dcc08a}
+.nail:nth-child(4){height:13.5rem;background:#f4e4d4}
+.nail:nth-child(5){height:9rem;background:#cf9a9a}
+@media (prefers-reduced-motion:no-preference){
+  .nail{animation:rise .9s cubic-bezier(.2,.8,.2,1) backwards}
+  .nail:nth-child(2){animation-delay:.08s}.nail:nth-child(3){animation-delay:.16s}
+  .nail:nth-child(4){animation-delay:.24s}.nail:nth-child(5){animation-delay:.32s}
+  @keyframes rise{from{transform:translateY(3rem);opacity:0}}
+}
+h2{font:700 clamp(1.8rem,4vw,2.6rem)/1.15 var(--serif)}
+section{padding:3rem 0;border-top:1px solid var(--gold-line)}
+.pro-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2rem}
+.pro-head p{color:var(--muted)}
+.pro-head a.ig,.contact a{color:var(--berry);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.pro-head .btn{padding:.6rem 1.2rem;font-size:.95rem}
+.groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:2.5rem}
+h3{font:500 1.4rem var(--serif);margin-bottom:.6rem;padding-bottom:.4rem;border-bottom:2px solid var(--gold-line)}
+ul{list-style:none;padding:0}
+li{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid var(--line)}
+li span:last-child{font-weight:600;white-space:nowrap;color:var(--gold)}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:.55rem 0;border-bottom:1px solid var(--line)}
+th{font-weight:500;color:var(--muted);font-size:.95rem}
+td:not(:first-child),th:not(:first-child){text-align:right;white-space:nowrap}
+td:not(:first-child){font-weight:600;color:var(--gold)}
+.combo{margin-top:2.5rem;background:var(--orchid);border:1px solid var(--gold-line);border-radius:1.5rem;padding:1.5rem 2rem;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem}
+.combo strong{font:500 1.4rem var(--serif);display:block}
+.combo p{color:var(--muted)}
+.combo .price{font:700 2rem var(--serif);color:var(--gold)}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:2rem;margin-top:2rem}
+.contact h3{font-size:1.2rem;border-bottom:0;padding-bottom:0}
+.contact p{color:var(--muted)}
+.map{width:100%;height:20rem;border:1px solid var(--gold-line);border-radius:1.5rem;margin-top:2rem}
+footer{padding:2.5rem 0;color:var(--muted);font-size:.95rem;border-top:1px solid var(--gold-line);margin-top:1rem}
+@media (max-width:760px){
+  header{flex-wrap:wrap}
+  .main-nav{order:3;width:100%;justify-content:flex-start;overflow-x:auto;padding:.35rem 0 .6rem}
+  .main-nav a{white-space:nowrap}
+  .header-cta{margin-left:auto}
+  .hero{grid-template-columns:1fr;padding-bottom:3rem}
+  .hand{height:13rem;order:-1}
+  .nail{width:2.6rem}
+  .nail:nth-child(1){height:6rem}.nail:nth-child(2){height:9rem}.nail:nth-child(3){height:11rem}.nail:nth-child(4){height:8.5rem}.nail:nth-child(5){height:5.5rem}
+  .combo{padding:1.25rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#">Espaço Lorena Martins</a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#alongamento">Unhas em gel</a>
+      <a href="#manicure">Manicure</a>
+      <a href="#cilios">Cílios e sobrancelhas</a>
+      <a href="#contato">Localização</a>
+    </nav>
+    <a class="btn header-cta" href="https://wa.me/5538984111774?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio.">Agendar</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Beleza, cuidado e autoestima em um só lugar</div>
+        <h1>Unhas, cílios e sobrancelhas <em>cuidados com carinho.</em></h1>
+        <p>Três profissionais, um só espaço em Montes Claros. Veja os valores e agende pelo WhatsApp.</p>
+        <a class="btn" href="https://wa.me/5538984111774?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio.">Agendar pelo WhatsApp</a>
+      </div>
+      <div class="hand" aria-hidden="true">
+        <span class="nail"></span><span class="nail"></span><span class="nail"></span><span class="nail"></span><span class="nail"></span>
+      </div>
+    </div>
+
+    <section id="alongamento">
+      <div class="pro-head">
+        <div>
+          <h2>Alongamento em gel</h2>
+          <p>com Lorena Martins · <a class="ig" href="https://instagram.com/lorena.martins_neves" target="_blank" rel="noopener">@lorena.martins_neves</a></p>
+        </div>
+        <a class="btn" href="https://wa.me/5538984111774?text=Ol%C3%A1!%20Quero%20agendar%20alongamento%20em%20gel%20com%20a%20Lorena.">Agendar com a Lorena</a>
+      </div>
+      <div class="groups">
+        <div>
+          <h3>Alongamento</h3>
+          <ul>
+            <li><span>Aplicação de alongamento acrigel</span><span>R$ 170,00</span></li>
+            <li><span>Alongamento encapsulada</span><span>R$ 200,00</span></li>
+            <li><span>Alongamento de unidade</span><span>R$ 20,00</span></li>
+            <li><span>Banho de gel</span><span>R$ 100,00</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Manutenções</h3>
+          <ul>
+            <li><span>Manutenção</span><span>R$ 85,00</span></li>
+            <li><span>Manutenção encapsulada</span><span>R$ 150,00</span></li>
+            <li><span>Blindagem</span><span>R$ 65,00</span></li>
+            <li><span>Manutenção de unidade</span><span>R$ 10,00</span></li>
+            <li><span>Manutenção vinda de outra profissional</span><span>R$ 105,00</span></li>
+            <li><span>Remoção do gel</span><span>R$ 60,00</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Decorações</h3>
+          <ul>
+            <li><span>Francesa permanente</span><span>R$ 25,00</span></li>
+            <li><span>Esmaltação em gel</span><span>R$ 38,00</span></li>
+            <li><span>Pó cromado</span><span>R$ 23,00</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="manicure">
+      <div class="pro-head">
+        <div>
+          <h2>Manicure e pedicure</h2>
+          <p>com Cíntia Martins · <a class="ig" href="https://instagram.com/cintianaildesingunhas" target="_blank" rel="noopener">@cintianaildesingunhas</a></p>
+        </div>
+        <a class="btn" href="https://wa.me/5538998572697?text=Ol%C3%A1!%20Quero%20agendar%20manicure%20ou%20pedicure%20com%20a%20C%C3%ADntia.">Agendar com a Cíntia</a>
+      </div>
+      <ul style="max-width:34rem">
+        <li><span>Manicure e pedicure</span><span>R$ 60,00</span></li>
+        <li><span>Manicure</span><span>R$ 35,00</span></li>
+        <li><span>Pedicure</span><span>R$ 35,00</span></li>
+        <li><span>Esfoliação dos pés</span><span>R$ 40,00</span></li>
+        <li><span>Esmaltação normal</span><span>R$ 20,00</span></li>
+      </ul>
+    </section>
+
+    <section id="cilios">
+      <div class="pro-head">
+        <div>
+          <h2>Cílios e sobrancelhas</h2>
+          <p>com Ana Clara Braga · <a class="ig" href="https://instagram.com/ana_claralash" target="_blank" rel="noopener">@ana_claralash</a></p>
+        </div>
+        <a class="btn" href="https://wa.me/5538988471441?text=Ol%C3%A1!%20Quero%20agendar%20c%C3%ADlios%20ou%20sobrancelhas%20com%20a%20Ana%20Clara.">Agendar com a Ana Clara</a>
+      </div>
+      <div class="groups">
+        <div>
+          <h3>Extensão de cílios</h3>
+          <table>
+            <tr><th>Técnica</th><th>Aplicação</th><th>Manutenção</th></tr>
+            <tr><td>Fio a fio clássico</td><td>R$ 70,00</td><td>R$ 60,00</td></tr>
+            <tr><td>Egípcio</td><td>R$ 80,00</td><td>R$ 70,00</td></tr>
+            <tr><td>Brasileiro</td><td>R$ 80,00</td><td>R$ 70,00</td></tr>
+            <tr><td>Efeito fox</td><td>R$ 100,00</td><td>R$ 90,00</td></tr>
+            <tr><td>Volume wispy</td><td>R$ 100,00</td><td>R$ 90,00</td></tr>
+          </table>
+          <ul style="margin-top:1rem"><li><span>Remoção química</span><span>R$ 40,00</span></li></ul>
+        </div>
+        <div>
+          <h3>Sobrancelhas</h3>
+          <ul>
+            <li><span>Design simples</span><span>R$ 35,00</span></li>
+            <li><span>Design com henna</span><span>R$ 40,00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="combo">
+        <div>
+          <strong>Combo</strong>
+          <p>Volume brasileiro + design simples de sobrancelhas</p>
+        </div>
+        <div class="price">R$ 100,00</div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Venha nos visitar</h2>
+      <div class="contact">
+        <div><h3>Endereço</h3><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Urbino+Viana+831+Cidade+Santa+Maria+Montes+Claros+MG" target="_blank" rel="noopener">Rua Urbino Viana, 831<br>Bairro Cidade Santa Maria<br>Montes Claros, MG</a><br><a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Urbino+Viana+831+Cidade+Santa+Maria+Montes+Claros+MG" target="_blank" rel="noopener">Ver no Google Maps</a></p></div>
+        <div><h3>Horários</h3><p>Atendimento com horário marcado. Chame no WhatsApp para combinar.</p></div>
+        <div><h3>Instagram</h3><p><a href="https://instagram.com/lorena.martins_neves" target="_blank" rel="noopener">@lorena.martins_neves</a><br><a href="https://instagram.com/cintianaildesingunhas" target="_blank" rel="noopener">@cintianaildesingunhas</a><br><a href="https://instagram.com/ana_claralash" target="_blank" rel="noopener">@ana_claralash</a></p></div>
+        <div><h3>WhatsApp</h3><p>Lorena: <a href="https://wa.me/5538984111774">(38) 98411-1774</a><br>Cíntia: <a href="https://wa.me/5538998572697">(38) 99857-2697</a><br>Ana Clara: <a href="https://wa.me/5538988471441">(38) 98847-1441</a></p></div>
+      </div>
+      <iframe class="map" title="Mapa com a localização do Espaço Lorena Martins" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Rua+Urbino+Viana+831+Cidade+Santa+Maria+Montes+Claros+MG&amp;z=16&amp;output=embed"></iframe>
+    </section>
+  </main>
+
+  <footer>© 2026 Espaço Lorena Martins. Todos os direitos reservados.</footer>
+</div>
+<a class="floating-whatsapp" href="https://wa.me/5538984111774?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">WhatsApp · Agendar</a>
+</body>
+</html>
